@@ -1,4 +1,6 @@
+
 <template>
+<body>
   <div id="app">
     <div id="nav">
        <router-link :to="{ name: 'posts'}"> Home </router-link>|
@@ -7,11 +9,16 @@
     </div>
     <router-view />
   </div>
+</body>
 </template>
 
 <style lang="scss">
 
-
+body {
+    border: none !important;
+    margin: 0px !important;
+    padding: 0 !important;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
