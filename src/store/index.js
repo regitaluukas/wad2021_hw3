@@ -219,7 +219,16 @@ export default new Vuex.Store({
   },
   getters: {
   },
-  mutations: {},
-  actions: {},
+  mutations: {IncreaseLikes: state => {
+    state.postsList.forEach(post => {
+    post.Button.likes += 1;
+    })
+    },},
+  actions: {
+    IncreaseLikeAct: act => {
+        setTimeout(function() {
+        act.commit("IncreaseLikes")
+        }, 100)
+        },},
   modules: {},
 });

@@ -21,7 +21,7 @@
           <p>{{post.text}}</p>
         </div>
         <div class="post_bottom">
-          <button>
+          <button v-on:click="IncreaseLikes ">
             <img v-bind:src="post.Button.url" alt="like_button" />
             <span class="likes">{{post.Button.likes}}</span>
           </button>
@@ -40,7 +40,11 @@ return {
 computed: {
 postsList(){
 return this.$store.state.postsList
-}}}
+}},
+methods: {
+IncreaseLikes: function() {
+ this.$store.dispatch("IncreaseLikeAct")
+ }}}
 </script>
 <style scoped>
 #main {
