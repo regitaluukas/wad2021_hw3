@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import posts from "../views/index.vue";
+import posts from "../views/posts.vue";
 
 
 Vue.use(VueRouter);
