@@ -22,7 +22,7 @@ export default new Vuex.Store({
           Button: {
                   "url": "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   "type": "png",
-                  "likes": 37
+                  "likes": 0
               }
       },
       {
@@ -41,7 +41,7 @@ export default new Vuex.Store({
           Button: {
                   "url": "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   "type": "png",
-                  "likes": 85
+                  "likes": 0
               }
       },
       {
@@ -60,7 +60,7 @@ export default new Vuex.Store({
           Button: {
                   "url": "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   "type": "png",
-                  "likes": 48
+                  "likes": 0
               }
       },
       {
@@ -79,7 +79,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 1000
+                  likes: 0
               }
       },
       {
@@ -98,7 +98,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 12
+                  likes: 0
               }
       },
       {
@@ -136,7 +136,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 67
+                  likes: 0
               }
       },
       {
@@ -155,7 +155,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 99
+                  likes: 0
               }
       },
       {
@@ -174,7 +174,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 1
+                  likes: 0
               }
       },
       {
@@ -193,7 +193,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 438
+                  likes: 0
               }
       },
       {
@@ -212,7 +212,7 @@ export default new Vuex.Store({
           Button: {
                   url: "http://cdn.onlinewebfonts.com/svg/img_95084.png",
                   type: "png",
-                  likes: 20
+                  likes: 0
               }
       }
   ]
@@ -220,14 +220,24 @@ export default new Vuex.Store({
   getters: {
   },
   mutations: {IncreaseLikes: state => {
-    state.postsList.forEach(post => {
-    post.Button.likes += 1;
+        state.postsList.forEach(post => {
+        post.Button.likes += 1;
+    })
+    },
+    ResetLikes: state => {
+        state.postsList.forEach(post => {
+        post.Button.likes = 0;
     })
     },},
   actions: {
     IncreaseLikeAct: act => {
         setTimeout(function() {
         act.commit("IncreaseLikes")
+        }, 100)
+        },
+    ResetLikeAct: act => {
+        setTimeout(function() {
+        act.commit("ResetLikes")
         }, 100)
         },},
   modules: {},
