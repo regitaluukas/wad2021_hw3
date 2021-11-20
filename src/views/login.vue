@@ -14,7 +14,7 @@
           <input type="password" name="password" placeholder="Password" /><br />
           <!-- Submitting the login form on login.html should redirect to index.html -->
         </form>
-        <a href="/">
+        <a href="/posts">
           <input type="submit" value="Log In" /> </a
         ><br />
         <a href="">Forgot password?</a>

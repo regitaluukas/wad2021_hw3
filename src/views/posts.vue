@@ -1,6 +1,10 @@
 <template>
   <div class="home">
+    <div id="posts_container">
+      <div class="post">
     <button v-on:click="ResetLikes">Reset likes</button>
+      </div>
+    </div>
     <post_compo  :postsList="postsList"> </post_compo>
   </div>
 </template>
@@ -23,4 +27,6 @@ ResetLikes: function() {
  this.$store.commit("ResetLikes")
  }}
 };
+
+
 </script>

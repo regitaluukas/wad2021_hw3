@@ -1,7 +1,6 @@
 <template>
  <div id= "main">
 <div id="posts_container" v-for="post in postsList" :key="post.id">
-    <!-- <span class="author"> Author: {{post.author.name}} </span> <br> -->
  <div class="post">
         <div class="post_header">
           <div class="icon">
