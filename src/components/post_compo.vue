@@ -49,6 +49,7 @@ return this.$store.state.postsList
   background-color: rgb(64, 118, 197);
   font-family: "Lato", sans-serif;
   text-align: left;
+  font-size: 18px;
   
 }
 
