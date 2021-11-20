@@ -48,7 +48,10 @@ IncreaseLikes: function(post) {
 <style scoped>
 * {
   font-family: "Lato", sans-serif;
+
 }
+
+
 
 #main {
   margin: 0;
@@ -56,8 +59,7 @@ IncreaseLikes: function(post) {
   background-color: rgb(64, 118, 197);
   font-family: "Lato", sans-serif;
   text-align: left;
-  font-size: 18px;
-  
+  font-size: 18px;  
 }
 
 .likes{
@@ -86,6 +88,10 @@ IncreaseLikes: function(post) {
   display: flex;
   flex-direction: column;
 }
+
+/* .post .post_header .name{
+  margin: 3%;
+} */
 
 .post .post_header {
   display: flex;

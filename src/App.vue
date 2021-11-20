@@ -10,9 +10,8 @@
 </template>
 
 <style lang="scss">
-* {
-       margin: 0;
-   }
+
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -20,6 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin: 0;
 }
 
 #nav {
@@ -30,7 +30,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: rgb(64, 118, 197);
     }
   }
 }
