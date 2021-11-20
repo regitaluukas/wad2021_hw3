@@ -6,7 +6,6 @@ import posts from "../views/index.vue";
 Vue.use(VueRouter);
 
 const routes = [
-
   {
     path: "/about",
     name: "About",
