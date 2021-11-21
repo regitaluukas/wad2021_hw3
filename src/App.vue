@@ -5,12 +5,30 @@
     <div id="nav">
        <router-link :to="{ name: 'posts'}"> Home </router-link>|
        <router-link :to="{ name: 'contactus'}"> Contact us </router-link>|
-       <router-link :to="{ name: 'login'}"> Login </router-link>
+       <router-link :to="{ name: 'login'}"> Log out </router-link>
     </div>
     <router-view />
   </div>
+  <footerVue></footerVue>
 </body>
 </template>
+
+<script>
+import footerVue from "@/components/footerVue.vue";
+export default {
+  components: {
+    "footerVue": footerVue,
+  },
+ data(){
+ return{
+ }},
+ methods: {
+ResetLikes: function() {
+ this.$store.commit("ResetLikes")
+ }}
+};
+
+</script>
 
 <style lang="scss">
 

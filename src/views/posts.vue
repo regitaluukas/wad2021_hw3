@@ -13,6 +13,7 @@
 
 import post_compo from "@/components/post_compo.vue";
 
+
 export default {
   name: "posts",
   components: {
