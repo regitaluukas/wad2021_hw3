@@ -8,13 +8,6 @@
   </div>
 </template>
 
-// <script>
-// export default {
-//  name: "footerVue",
-//     data() {
-//         return {
-//             Log: 'home title'
-//         }
-//       },
-// }
-// </script>
+<style scoped>
+
+</style>

@@ -47,6 +47,8 @@ body {
 
 #nav {
   padding: 30px;
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(233, 234, 236) 75%);
 
   a {
     font-weight: bold;
@@ -55,6 +57,20 @@ body {
     &.router-link-exact-active {
       color: rgb(64, 118, 197);
     }
+  }
+}
+
+#footer {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  bottom:0;
+  a {
+
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
   }
 }
 </style>

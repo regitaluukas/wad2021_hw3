@@ -1,8 +1,6 @@
 <template>
   <div id="main">
     <div class="box">
-      <div class="logo">
-      </div>
       <div class="login">
         <h3>Welcome to postIt!</h3>
         <br />
@@ -24,18 +22,13 @@
 </template>
 <style scoped>
 
-
-
 #main {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: rgb(64, 118, 197);
   font-family: "Lato", sans-serif;
   text-align: left;
   font-size: 18px;
-  
+
 }
 
 .box {
@@ -45,13 +38,8 @@
   width: 400px;
 }
 
-.box > .logo img {
-  position: relative;
-  width: 60px;
-}
-
 .login {
-  margin: -15% auto 0 auto;
+  margin: 5% auto 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;

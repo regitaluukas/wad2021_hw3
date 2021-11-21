@@ -32,6 +32,10 @@ ResetLikes: function() {
 </script>
 
 <style scoped>
+.home {
+background-color: rgb(64, 118, 197);  
+}
+
 #posts_container {
   background-color: white;
   margin: auto;
@@ -53,9 +57,13 @@ ResetLikes: function() {
 
 .reset-button{
   font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(83, 129, 197);
+  font-weight: bold;
+  border: 0;
 }
 
 .reset-button:hover{
-  background-color: rgba(64, 117, 197, 0.226);
+  background-color: rgba(235, 235, 235, 0.226);
 }
 </style>
