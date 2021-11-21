@@ -1,22 +1,20 @@
 <template>
   <div id="main">
-    <div class="box">
-      <div class="login">
-        <h3>Welcome to postIt!</h3>
-        <br />
-        <a href="">Create an Account</a><br />
-        <p>Or</p>
-        <h3>Please Log In</h3>
-        <form>
-          <input type="text" name="email" placeholder="Email" /><br />
-          <input type="password" name="password" placeholder="Password" /><br />
-          <!-- Submitting the login form on login.html should redirect to index.html -->
-        </form>
-        <a href="/posts">
-          <input type="submit" value="Log In" /> </a
-        ><br />
-        <a href="">Forgot password?</a>
-      </div>
+    <div class="login">
+      <h3>Welcome to postIt!</h3>
+      <br />
+      <a href="">Create an Account</a><br />
+      <p>Or</p>
+      <h3>Please Log In</h3>
+      <form>
+        <input type="text" name="email" placeholder="Email" /><br />
+        <input type="password" name="password" placeholder="Password" /><br />
+        <!-- Submitting the login form on login.html should redirect to index.html -->
+      </form>
+      <a href="/posts">
+        <input type="submit" value="Log In" /> </a
+      ><br />
+      <a id="forgot" href="">Forgot password?</a>
     </div>
   </div>
 </template>
@@ -31,15 +29,10 @@
 
 }
 
-.box {
-  background-color: white;
-  margin: 5% auto 0 auto;
-  padding: 20px;
-  width: 400px;
-}
-
 .login {
-  margin: 5% auto 0 auto;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -60,5 +53,9 @@ h3 ~ form input {
 
 .login > a:hover {
   color: rgb(62, 62, 226);
+}
+
+#forgot {
+  margin-bottom: 20px;
 }
 </style>
