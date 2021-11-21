@@ -2,11 +2,7 @@
 <template>
 <body>
   <div id="app">
-    <div id="nav">
-       <router-link :to="{ name: 'posts'}"> Home </router-link>|
-       <router-link :to="{ name: 'contactus'}"> Contact us </router-link>|
-       <router-link :to="{ name: 'login'}"> Log out </router-link>
-    </div>
+    <header-vue></header-vue>
     <router-view />
   </div>
   <footerVue></footerVue>
@@ -15,9 +11,11 @@
 
 <script>
 import footerVue from "@/components/footerVue.vue";
+import headerVue from "@/components/headerVue.vue";
 export default {
   components: {
     "footerVue": footerVue,
+    "headerVue": headerVue,
   },
  data(){
  return{
